@@ -10,12 +10,16 @@
 		<div class="gedan-list clearfix">
 			<h3>我的歌单</h3>
 			<div class="song_list" @click="go_mysong(songobj)">
-				<div class="pic"><img :src="songobj.logo" alt="" class="pic"></div>
+				<div>
+					<img :src="songobj.logo" alt="" class="pic">
+				</div>
 				<p v-html="songobj.desc"></p>
 				<span v-html="songobj.author"></span>
 			</div>
       <div class="song_list" @click="go_mysong(songobj1)">
-				<div class="pic"><img :src="songobj1.logo" alt=""></div>
+				<div>
+					<img :src="songobj1.logo" alt="" class="pic">
+				</div>
         <p v-html="songobj1.desc"></p>
         <span v-html="songobj1.author"></span>
       </div>
@@ -227,6 +231,10 @@ export default {
     width: 95%;
 		height: 150px;
   }
+	.pic{
+		width:100%;
+		height:100%
+	}
 	.song_list p{
 		white-space:nowrap;
 		text-overflow:ellipsis;
