@@ -1,17 +1,21 @@
 # music
  我的音乐
 
-### npm install //安装依赖包
+ npm install  安装依赖
 
-### npm run dev //运行项目 localhost:8080
+ npm run dev  运行项目
 
-### npm run build  // 项目打包 
+ npm run build  打包项目
 
-### 感兴趣的童鞋可以来个star
+ 感兴趣的童鞋可以来个star
 # 技术栈
-*
-*
-# 项目架构
+*node 运行环境
+*vue-cli脚手架搭建项目
+*vue-router3.0 来做路由，实现单页面跳转
+*mint-ui 手机端ui框架
+*vuex3.1 状态管理器，用来集中管理数据
+*vue-axios 基于 promise 的 HTTP 库 用来请求接口，实现前后端分离
+# 项目目录结构
 ```
 ├─dist               #打包后文件         
 │  │  index.html     
@@ -20,7 +24,7 @@
 │  │      ├─img/
 │  │      ├─js/
 │  │      config.js
-├─build
+├─build            #里面是对 webpack 开发和打包的相关设置，包括入口文件、输出文件、使用的模块等
 │      build.js
 │      check-versions.js
 │      logo.png
@@ -102,16 +106,16 @@
 └─static                  #静态文件
         .gitkeep
         config.js
-│  .babelrc
-│  .editorconfig
+│  .babelrc           #使用 babel 的配置文件，用来设置转码规则和插件；
+│  .editorconfig      #代码的规范文件，规定使用空格或 tab 缩进，缩进的长度是两位还是四位之类的代码风格，使用的话需要在编辑器里下载对应的插件；
 │  .gitattributes
-│  .gitignore
-│  .postcssrc.js
+│  .gitignore         #指定 git 忽略的文件
+│  .postcssrc.js      #指定使用的 css 预编译器，里面默认配置了 autoprefixer ，自动补全浏览器前缀；
 │  index.html          #入口html
-│  package-lock.json
-│  package.json        
-│  README.md
-│```
+│  package-lock.json    #这个文件主要功能是确定当前安装的包的依赖，以便后续重新安装的时候生成相同的依赖，而忽略项目开发过程中有些依赖已经发生的更新
+│  package.json       #指定项目开发和生成环境中需要使用的依赖库；
+│  README.md          #你看的就是我
+│
 
 
 
