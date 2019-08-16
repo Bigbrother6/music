@@ -6,7 +6,7 @@
  npm run dev  运行项目
 
  npm run build  打包项目
-
+安卓版App 下载链接 https://pan.baidu.com/s/1MrwuVXSObUNq-izmv7H2RA
  感兴趣的童鞋可以来个star
 # 技术栈
 * node 运行环境
